@@ -1,3 +1,4 @@
 # ***tinyserver***
 
-Tinyserver is server infrastructure to monitor the tinyweather array. Tinyserver supports battery and power monitoring, network status, and general state of health statistics.
+Tinyserver is infrastructure for monitoring and pooling data from the tinyweather array. Tinyserver supports snmp, data pooling and transfer, plotting, and much more in the future.
+
