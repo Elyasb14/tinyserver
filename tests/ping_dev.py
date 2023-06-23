@@ -30,5 +30,5 @@ def checksum(source_string):
     answer = answer >> 8 | (answer << 8 & 0xff00)
     return answer
 
-print(checksum('h'))
+print(checksum("fuck"))
     
