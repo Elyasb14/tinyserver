@@ -11,3 +11,4 @@ what do we want to implement?
 - implement program to get data from each sensor node
 - implement client program to get files
 - implement ping tests
+- implement cool stuff
