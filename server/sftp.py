@@ -1,5 +1,7 @@
 import pysftp
 
-with pysftp.Connection(host='10.1.1.4', username="ebianchi", password="hahah") as sftp:
-    with sftp.cd('/home/ebianchi/tinyweb/tinyweather/data'):
-        sftp.get('04-29-2023-bme680.csv')
+with pysftp.Connection(host='192.168.86.91', username="ebianchi", password="Galoisgroup#2") as connection:
+    with connection.cd('/Users/ebianchi/programs/tinyweb/tinyweather/data'):
+        data_dir = connection.listdir()
+        for file in data_dir:
+            connection.get(f'{file}', localpath=f'data/{file}')
