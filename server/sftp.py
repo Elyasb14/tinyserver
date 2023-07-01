@@ -5,7 +5,7 @@ import os
 def sftp_ip(ip: str) -> None:
         ssh_client = SSHClient()
         ssh_client.set_missing_host_key_policy(AutoAddPolicy())
-        ssh_client.connect(hostname=ip, username='ebianchi', password='Galoisgroup#2')
+        ssh_client.connect(hostname=ip, username='ebianchi', password='hahah')
         ftp_client = ssh_client.open_sftp()
         ftp_client.chdir(f'/Users/ebianchi/programs/tinyweb/tinyweather/data/')
         data_dir = ftp_client.listdir()
