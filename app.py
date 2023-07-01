@@ -1,12 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
-@app.route("/", methods=['GET'])
-@app.route("/index.html")
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    files = os.listdir('data')
+    return render_template('index.html', files=files)
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5001)

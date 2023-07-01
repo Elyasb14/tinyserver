@@ -1,5 +1,15 @@
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-
+<link
+  rel="shortcut icon"
+  href="{{ url_for('static', filename='favicon.ico') }}"
+/>
 
 <div>This is a placeholder, maybe this will be useful some other time.</div>
 
+<form method="get" action="/">
+  <select name="files" method="GET" action="/" multiple>
+    <option value="{{files[0]}}" selected>{{files[0]}}</option>
+        {% for file in files[1:] %}
+        <option value="{{file}}">{{file}}</option>
+        {% endfor %}
+  </select>
+</form>
