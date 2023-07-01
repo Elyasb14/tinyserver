@@ -2,10 +2,10 @@ from pythonping import ping
 # from paramiko import SSHClient, AutoAddPolicy
 
 class Monitor:
-    def __init__(self, ip: str) -> str:
+    def __init__(self, ip: str) -> None:
         self.ip = ip
 
-    def ping_ip(self: str) -> str:
+    def ping_ip(self) -> str:
         try:
             ping_node = ping(self.ip)
             if ping_node.success():
