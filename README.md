@@ -13,4 +13,5 @@ what do we want to implement?
 - implement client program to get files
   - want to implement gui version of this and a basic sftp version of this
 - implement ping tests
+TEST
 - implement cool stuff
