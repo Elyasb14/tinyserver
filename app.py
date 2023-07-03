@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 import os
 
 app = Flask(__name__)
@@ -7,6 +7,11 @@ app = Flask(__name__)
 def index():
     files = os.listdir('data')
     return render_template('index.html', files=files)
+
+@app.route('/select', methods = ['POST', 'GET'])
+def select():
+    files = request.form.get('files')
+    return send_file(f'data/{files}')
 
 
 if __name__ == "__main__":
