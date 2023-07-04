@@ -1,6 +1,7 @@
 from paramiko import SSHClient, AutoAddPolicy
 import pandas as pd
 import os
+from datetime import datetime
 
 def sftp_ip(ip: str) -> str:
         ssh_client = SSHClient()
@@ -22,5 +23,5 @@ def sftp_ip(ip: str) -> str:
 if __name__ == "__main__":
     df = pd.read_csv('server/nodes.csv')
     with open(f"/Users/{os.getlogin()}/programs/tinyserver/server/logs/sftp_log.txt", 'a') as file:
-        file.write(f"{sftp_ip('10.1.1.12')}")
+        file.write(f"{sftp_ip('10.1.1.12')} at {datetime.now()}\n")
 

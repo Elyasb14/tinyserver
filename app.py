@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    files = os.listdir('data')
+    files = sorted(os.listdir('data'))
     return render_template('index.html', files=files)
 
 @app.route('/select', methods = ['POST', 'GET'])
