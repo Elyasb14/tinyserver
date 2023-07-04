@@ -2,27 +2,37 @@
   rel="shortcut icon"
   href="{{ url_for('static', filename='favicon.ico') }}"
 />
-<link rel="stylesheet" href="{{ url_for('static', filename='static/styles.css') }}">
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='static/styles.css') }}"
+/>
 
 <style>
   .center {
     margin: auto;
     width: 60%;
-    border: 3px solid #73AD21;
+    border: 3px solid #73ad21;
     padding: 10px;
   }
-  </style>
-
-
+</style>
 <div class="center">
-<h1>central tinyweather data client</h1>
-<form method="POST", action="/select">
-  <select name="files" method="post" action="{{ url_for('select') }}">
-    <option value="{{files[0]}}" selected>{{files[0]}}</option>
-        {% for file in files[1:] %}
-        <option value="{{file}}">{{file}}</option>
-        {% endfor %}
-  </select>
-  <button type="submit" class="btn btn-default">Go</button>
-</form>
+  <h1>central tinyweather data client</h1>
+  <form method="POST" , action="/select">
+    <select name="files" method="post" action="{{ url_for('select') }}">
+      <option value="{{files[0]}}" selected>{{files[0]}}</option>
+      {% for file in files[1:] %}
+      <option value="{{file}}">{{file}}</option>
+      {% endfor %}
+    </select>
+    <button type="submit" class="btn btn-default">Go</button>
+  </form>
+  <form method="POST" , action="/select">
+    <select name="files" method="post" action="{{ url_for('select') }}">
+      <option value="{{files[0]}}" selected>{{files[0]}}</option>
+      {% for file in files[1:] %}
+      <option value="{{file}}">{{file}}</option>
+      {% endfor %}
+    </select>
+    <button type="submit" class="btn btn-default">Go</button>
+  </form>
 </div>

@@ -1,5 +1,4 @@
 from pythonping import ping
-# from paramiko import SSHClient, AutoAddPolicy
 
 class Monitor:
     def __init__(self, ip: str) -> None:
