@@ -15,6 +15,7 @@
     padding: 10px;
   }
 </style>
+{% for dir in dirs %}
 <div class="center">
   <h1>central tinyweather data client</h1>
   <form method="POST" , action="/select">
@@ -26,13 +27,4 @@
     </select>
     <button type="submit" class="btn btn-default">Go</button>
   </form>
-  <form method="POST" , action="/select">
-    <select name="files" method="post" action="{{ url_for('select') }}">
-      <option value="{{files[0]}}" selected>{{files[0]}}</option>
-      {% for file in files[1:] %}
-      <option value="{{file}}">{{file}}</option>
-      {% endfor %}
-    </select>
-    <button type="submit" class="btn btn-default">Go</button>
-  </form>
-</div>
+{% endfor %}

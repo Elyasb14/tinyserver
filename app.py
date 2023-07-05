@@ -5,8 +5,10 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    files = sorted(os.listdir('data'))
-    return render_template('index.html', files=files)
+    dirs = [dir for dir in os.listdir('data')]
+    for dir in dirs:
+        files = sorted([file for file in f'data/{dir}'])
+    return render_template('index.html', dirs=dirs, files=files)
 
 @app.route('/select', methods = ['POST', 'GET'])
 def select():
