@@ -1,26 +1,12 @@
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 65] No route to host 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-can't ping 192.168.86.2 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 65] No route to host 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
-can ping 192.168.86.1 
-cant ping 192.168.86.2. Error: [Errno 64] Host is down 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
+cant ping 10.1.1.12. Error: [Errno 1] Operation not permitted 
+cant ping 10.1.1.12. Error: [Errno 1] Operation not permitted 
+cant ping 10.1.1.12. Error: [Errno 1] Operation not permitted 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
+can ping 10.1.1.12 
